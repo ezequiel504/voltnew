@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <header>
+        <nav class="bar">
+            <img src="img/menu.png" alt="Menu" id="menu" onclick="toggleMenu()">
+            <div id="logo">
+                <a href="#Home"><img src="img/logo escuro vetorizado.png" alt="Logo"></a>
+            </div>
+            <h2 class="head-texto">VOLTDRIVE</h2>
+            <nav>
+                <ul class="list-cabeca">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Veiculos">Veículos</a></li>
+                    <li><a href="#Serviços">Serviços</a></li>
+                    <li><a href="#Sobre-nos">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <div id="menu-content" class="menu-content">
+        <ul>
+            <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#Veiculos" onclick="toggleMenu()">Veículos</a></li>
+            <li><a href="#Serviços" onclick="toggleMenu()">Serviços</a></li>
+            <li><a href="#Sobre-nós" onclick="toggleMenu()">Sobre nós</a></li>
+        </ul>
+    </div>
+   
+
+
+
+    <section id="Home">
+        <div class="slideshow-container">
+            <img class="img-slide" name="slide" src="img/car-branco-bg.png">
+            
+            <!-- <div class="mySlides fade">
+                <img class="img-slide" src="img/car-cinza-bg.png">
+            </div>
+            <div class="mySlides fade">
+                <img class="img-slide" src="img/car-cinza.png">
+            </div>
+            <div class="mySlides fade">
+                <img class="img-slide" src="img/car-verme.png">
+            </div>-->
+            <div class="botoes">
+                <span id="bt1" class="dot" onClick="Posiciona(1)"></span> 
+                <span id="bt2" class="dot" onClick="Posiciona(2)"></span> 
+                <span id="bt3" class="dot" onClick="Posiciona(3)"></span>
+                <span id="bt4" class="dot" onClick="Posiciona(4)"></span> 
+            </div>
+        </div>          
+    </section>
+    <br><br><br> <br><br><br> <br><br><br>
+    <div class="container">
+        <div class="car-listing">
+            <h2 >Veículos</h2>
+    <section id="Veiculos">
+    <div class="carr">
+        <img src="img/carr1.png" alt="">
+        <h3>Tesla Model S</h3>
+        <p class="ll">Autonomia: Até 652 km
+<br>
+        Velocidade Máxima: 250 km/h
+        <br>
+        Aceleração: 0-100 km/h em 2.1 segundos
+        <br>
+        Preço: A partir de R$ 799.000
+        <br>
+        O Tesla Model S é um sedan de luxo que combina alta performance com um design elegante e tecnologias de ponta. Equipado com o sistema de piloto automático da Tesla, oferece uma experiência de condução incomparável.</p>
+    </div>
+    
+    <div class="carr">
+        <img src="img/carr2.png" alt="">
+        <h3>Nissan Leaf</h3>
+        <pc lass="ll">Autonomia: Até 364 km
+<br>
+        Velocidade Máxima: 144 km/h
+        <br>
+        Aceleração: 0-100 km/h em 7.9 segundos
+        <br>
+        Preço: A partir de R$ 239.900
+        <br>
+        O Nissan Leaf é um dos carros elétricos mais vendidos no mundo. Compacto e eficiente, é ideal para quem busca economia e sustentabilidade no dia a dia. Equipado com diversas funcionalidades inteligentes, garante conforto e praticidade.</p>
+    </div>
+    
+    <div class="carr">
+        <img src="img/carr3.png" alt="">
+        <h3>Chevrolet Bolt EV</h3>
+
+        <p class="ll">Autonomia: Até 416 km
+<br>
+        Velocidade Máxima: 146 km/h
+        <br>
+        Aceleração: 0-100 km/h em 6.5 segundos
+        <br>
+        Preço: A partir de R$ 269.900
+        <br>
+        O Chevrolet Bolt EV é um crossover versátil que oferece uma excelente autonomia e um ótimo custo-benefício. Com amplo espaço interno e tecnologias avançadas, é uma excelente escolha para famílias e viagens longas.</p>
+    </div>
+    
+    <div class="carr">
+        <img src="img/carr4.png" alt="">
+        <h3>BMW i3</h3>
+      
+        <p class="ll"> Autonomia: Até 246 km <br>Velocidade Máxima: 150 km/h<br> Aceleração: 0-100 km/h em 7.3 segundos <br> Preço: A partir de R$ 279.950 <br>
+            O BMW i3 é um compacto urbano com um design futurista e um interior sustentável, feito com materiais reciclados. Oferece uma experiência de condução dinâmica e ágil, ideal para grandes cidades.
+        </p>
+    </div>
+</div>
+</section>
+
+<br><br><br><br><br><br>
+    <section id="Sobre-nos">
+        <h2 id="titulo-sobre-nos">Sobre nós</h2>
+        <p id="sobre-nos-legenda">
+            A Volt Drive é líder na produção de carros elétricos, fundada em 2024 por entusiastas da mobilidade sustentável. Oferecemos uma linha diversificada, incluindo o compacto Modelo Z, o familiar Modelo X e o luxuoso Modelo S. Nossa tecnologia de ponta inclui baterias de próxima geração e sistemas de inteligência artificial integrados. Comprometidos com práticas sustentáveis, desde a produção até o uso dos veículos, minimizando nossa pegada ecológica. Na Volt Drive, estamos moldando o futuro da mobilidade, combinando inovação, desempenho e sustentabilidade em cada carro que fabricamos.
+        </p>
+        <img src="img/grupinho.jpg" alt="grupo" id="grupo">
+    </section>
+    <br><br><br><br><br><br>
+    <!--SERVIÇOS-->
+    <section class="servicos" id="Serviços">
+        <div class="card-container">
+            <div class="card">
+                <img src="img/card1.png" alt="">
+                <div class="card-content">
+                    <h3>Reparo</h3>
+                    <p>Serviços de manutenção e reparo especializados para carros eletricos,incluindo diagnóstico de problemas,substituição de baterias e manutenção de sistemas elétricos.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card22.png" alt="">
+                <div class="card-content">
+                    <h3>Consultoria</h3>
+                    <p>Serviços de consultoria para empresas e governos interessados em trasição para veiculos elétricos,incluindo aconselhamento sobre infraestrutura dev carregamento,políticas de incentivo estratégias de frota.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card3.png" alt="">
+                <div class="card-content">
+                    <h3>Conversão</h3>
+                    <p>Conversão para elétrico: Transformar veículos a combustão em veículos elétricos, adaptando o sistema de propulsão e a bateria.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card4.png" alt="">
+                <div class="card-content">
+                    <h3>Reciclagem de baterias</h3>
+                    <p>Desenvolver um serviço de reciclagem de baterias de íon-lítio, garantindo o descarte responsável e sustentável desses componentes.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card5.png" alt="">
+                <div class="card-content">
+                    <h3>Troca de carros</h3>
+                    <p> Implementar um programa de incentivo para proprietários de carros a combustão trocarem seus veículos por modelos elétricos, oferecendo descontos na compra, instalação de estações de carregamento em casa e outros benefícios.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card6.png" alt="">
+                <div class="card-content">
+                    <h3>Sistemas de gerenciamento de energia</h3>
+                    <p>Desenvolver e instalar sistemas inteligentes de gerenciamento de energia para residências e empresas que possuem carros elétricos, otimizando o carregamento e reduzindo os custos de energia.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card7.png" alt="">
+                <div class="card-content">
+                    <h3>Testes e certificações de segurança</h3>
+                    <p>Oferecer serviços de testes e certificação de segurança para veículos elétricos e componentes relacionados, garantindo conformidade com regulamentações e normas de segurança.
+                    </p>
+                    <a href="" class="btn">Read more</a>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.instagram.com/voltdrive2k24?igsh=MTE2NmF0aW96OGZobQ%3D%3D" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" id="instagram">
+            </a>
+            <a href="https://www.google.com/maps/dir//R.+Guaip%C3%A1,+678+-+Vila+Leopoldina,+S%C3%A3o+Paulo+-+SP,+05089-000/@-23.5207969,-46.8101881,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cef8c1d371ec31:0x671c9325c275132e!2m2!1d-46.7277865!2d-23.5208186?entry=ttu" target="_blank">
+                <img src="img/local-icon.png" alt="Localização" id="localizacao">
+            </a>
+        </div>
+        <div class="footer-text">
+            © 2024 VOLTDRIVE. Todos os direitos reservados.
+        </div>
+    </footer>
+        
+    <script src="carrossel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
